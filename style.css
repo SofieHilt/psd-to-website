@@ -50,7 +50,7 @@ h3 {
     font-decoration: none;
 }
 #watch-button-video {
-    width: 30%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
