@@ -95,6 +95,10 @@ h3 {
     border-radius: 2px;
     text-transform: uppercase;
 }
+#typo-wrap button:hover {
+    color: white;
+    background-color: #c7cbcd;
+}
 #watch {
 }
 #expertise {
