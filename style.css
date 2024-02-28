@@ -31,14 +31,73 @@ h3 {
     font-style: normal;
     text-transform: uppercase;
 }
-#nav-wrap{
-    
+#nav-wrap {
 }
 #our-nav {
 }
 #hero {
 }
 #story {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row;
+    align-content: space-around;
+    justify-content: center;
+}
+#story-wrap {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: row;
+    flex-direction: row;
+    flex-flow: row;
+    align-content: space-between;
+    justify-content: center;
+}
+#img-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4rem;
+}
+#img-wrap img {
+    width: auto;
+    max-width: 235px;
+    max-height: 229px;
+    height: 90%;
+}
+#typo-wrap {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#typo-wrap h2 {
+    margin-bottom: 1.3rem;
+}
+#typo-wrap p {
+    font-weight: 300;
+    margin-bottom: 1.3rem;
+}
+#typo-wrap button {
+    color: #c7cbcd;
+    border-color: #c7cbcd;
+    border-width: 1px;
+    width: max-content;
+    font-weight: 600;
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    border-style: solid;
+    background-color: white;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+#typo-wrap button:hover {
+    color: white;
+    background-color: #c7cbcd;
 }
 #watch {
 }
