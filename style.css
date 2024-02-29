@@ -42,7 +42,6 @@ h3 {
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: row;
     align-content: space-around;
     justify-content: center;
     padding-bottom: 5rem;
@@ -52,7 +51,6 @@ h3 {
     width: 80%;
     height: auto;
     display: flex;
-    flex-wrap: row;
     flex-direction: row;
     flex-flow: row;
     align-content: space-between;
@@ -110,7 +108,7 @@ h3 {
     justify-content: center;
     background-image: url(./assets/photoshop/photoshop/design-assets/bgk-middle.png);
     background-size: cover;
-    font-decoration: none;
+    text-decoration: none;
 }
 #watch-button-video {
     width: 100%;
