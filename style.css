@@ -31,23 +31,194 @@ h3 {
     font-style: normal;
     text-transform: uppercase;
 }
-#nav-wrap{
-    
+
+#nav-wrap {
 }
 #our-nav {
 }
 #hero {
 }
 #story {
+    width: 100%;
+    display: flex;
+    flex-direction: row;   
+    align-content: space-around;
+    justify-content: center;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+#story-wrap {
+    width: 80%;
+    height: auto;
+    display: flex;  
+    flex-direction: row;
+    flex-flow: row;
+    align-content: space-between;
+    justify-content: center;
+}
+#img-wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4rem;
+}
+#img-wrap img {
+    width: auto;
+    max-width: 235px;
+    max-height: 229px;
+    height: 90%;
+}
+#typo-wrap {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#typo-wrap h2 {
+    margin-bottom: 1.3rem;
+}
+#typo-wrap p {
+    font-weight: 300;
+    margin-bottom: 1.3rem;
+}
+#typo-wrap button {
+    color: #c7cbcd;
+    border-color: #c7cbcd;
+    border-width: 1px;
+    width: max-content;
+    font-weight: 600;
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    border-style: solid;
+    background-color: white;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+#typo-wrap button:hover {
+    color: white;
+    background-color: #c7cbcd;
 }
 #watch {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/photoshop/photoshop/design-assets/bgk-middle.png);
+    background-size: cover;
+    text-decoration: none;
 }
-#expertise {
+#watch-button-video {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
 }
-#team {
+#watch img {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
 }
-#contact-client {
+#watch h3 {
+    font-weight: 800;
+    color: white;
 }
+
+/* Section "Expertise" */
+#expertise
+{
+    .expertise_wrapper h2  
+    {
+        margin: 1em;
+        text-align: center;
+        font-weight: bold;
+    }  
+
+    .expertise_wrapper h3
+    {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .abstract
+    {        
+        --section-margin-left: 15vw;
+        --section-margin-right: 15vw;
+        --margin-bottom-abstract: 2em;
+        --margin-top-abstract: 2em;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: var( --margin-bottom-abstract, 0);
+        margin-top:  var(--margin-top-abstract, 0);
+        margin-left: var(--section-margin-left, 0);
+        margin-right: var(--section-margin-right, 0);    
+    }
+  
+    /*
+       .tile_wrapper
+       Remarks: @media stuff MUST be tested. Still lacking a test environment.
+       TODO: Add further requirements for testing the media queries in this 
+       file (margins whatever)
+    */
+    .tile_wrapper 
+    {        
+        max-width: 1280px;
+        margin-inline: auto;
+
+        display: grid;
+      
+        grid-template-columns: repeat(1, 1fr);
+
+        @media (min-width: 768px) 
+        {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 1024px) 
+        {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        justify-content: center;       
+        padding: 1rem;      
+        /* border: 1pt solid black; /* TODO: REMOVE AFTER TESTING */
+    }
+
+    /* .tile
+        Remarks: Border is not as in the psd that leaves out the outer borders of the set of tiles.
+        For achieving this, each tile would have to know its position, depending on the resolution
+        according to the media type. If this was a requirement, it is being dropped for now because
+        it does not add value for the customer. 
+        That the media type stuff itself adds value can be seen, however, making this part responsive.       
+    */
+    .tile
+    {      
+        background-color: whitesmoke;
+        text-align: center;
+        border: 1pt solid grey; 
+        box-shadow:
+         rgba(0, 0, 0, 0.25) 0px 54px 55px,
+         rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+         rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+         rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+         rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        padding: 1rem;   
+    }
+
+    .tile_text
+    {
+        text-align: center;
+    }
+}
+#team {}
+
+#contact-client {}
+
 #our-footer {
     background-image: url("./assets/photoshop/photoshop/design-assets/bgk-footer.png");
     /*border: 2px solid rgb(35, 6, 81);*/
