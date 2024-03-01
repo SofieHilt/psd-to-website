@@ -50,7 +50,7 @@ h3 {
 #story-wrap {
     width: 80%;
     height: auto;
-    display: flex; 
+    display: flex;  
     flex-direction: row;
     flex-flow: row;
     align-content: space-between;
