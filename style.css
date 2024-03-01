@@ -142,8 +142,7 @@ h3 {
 
 /* Section "Expertise" */
 
-#expertise h2
-{
+#expertise h2 {
     margin: 1em;
     text-align: center;
     font-weight: bold;
@@ -154,8 +153,7 @@ h3 {
     font-weight: bold;
 }
 
-#expertise .abstract
-{
+#expertise .abstract {
     --section-margin-left: 15vw;
     --section-margin-right: 15vw;
     --margin-bottom-abstract: 2em;
@@ -174,30 +172,32 @@ h3 {
     TODO: Add further requirements for testing the media queries in this 
     file (margins whatever)
 */
-#expertise .tile_wrapper
-{
-  max-width: 1280px;
-  margin-inline: auto;
+#expertise .tile_wrapper {
+    max-width: 1280px;
+    margin-inline: auto;
 
-display: grid;
+    display: grid;
 
-/*  This code does not parse correctly in this context
     grid-template-columns: repeat(1, 1fr);
-
-    @media screen and (min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media screen and (min-width: 1024px) {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    */
-    grid-template-columns: repeat(3, 1fr);
 
     justify-content: center;
     padding: 1rem;
     /* border: 1pt solid black; /* TODO: REMOVE AFTER TESTING */
 }
+
+
+@media (min-width: 768px) {
+    #expertise .tile_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    #expertise .tile_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 
 /* .tile
         Remarks: Border is not as in the psd that leaves out the outer borders of the set of tiles.
@@ -206,8 +206,7 @@ display: grid;
         it does not add value for the customer. 
         That the media type stuff itself adds value can be seen, however, making this part responsive.       
 */
-#expertise .tile
-{
+#expertise .tile {
     background-color: whitesmoke;
     text-align: center;
     border: 1pt solid grey;
@@ -220,8 +219,7 @@ display: grid;
     padding: 1rem;
 }
 
-.expertise_wrapper .tile_text
-{
+.expertise_wrapper .tile_text {
     text-align: center;
 }
 
@@ -236,28 +234,30 @@ display: grid;
     flex-direction: column;
     text-align: center;
     width: 100%;
-    display:flex;
+    display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-align: center;
 }
-footer > *{
+
+footer>* {
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-footer .footer-container-top{
+footer .footer-container-top {
     justify-content: space-around;
 }
+
 /*footer .footer-container-middle{
     justify-content: space-between;
     
 }*/
-footer .footer-container-end{
-flex-flow: column;
+footer .footer-container-end {
+    flex-flow: column;
     justify-content: center;
 }
 
@@ -267,15 +267,15 @@ footer h6 {
 
 footer .left {
 
-/*border-top: 1px solid white ;
+    /*border-top: 1px solid white ;
 border-left: 1px solid white;*/
 
-margin: 5rem auto;
-width: 500px;
-height: 200px;
-display: flex;
-flex-direction: column;
-/*justify-content: left;
+    margin: 5rem auto;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: left;
 font-size: smaller;*/
 
 }
@@ -284,7 +284,7 @@ footer .center {
 
     /*border-top: 1px solid white ;
     border-left: 1px solid white;*/
-    
+
     margin: 5rem auto;
     width: 500px;
     height: 200px;
@@ -298,7 +298,7 @@ footer .center .img {
 
     /*border-top: 1px solid white ;
     border-left: 1px solid white;*/
-    
+
     margin: auto;
     width: 50px;
     height: 50px;
@@ -312,7 +312,7 @@ footer .right {
 
     /*border-top: 1px solid white ;
     border-left: 1px solid white;*/
-    
+
     margin: 5rem auto;
     width: 500px;
     height: 200px;
@@ -321,11 +321,13 @@ footer .right {
     /*justify-content: left;
     font-size: smaller;*/
 }
-footer label{
+
+footer label {
 
     /*border-top: 1px solid white ;
     border-left: 1px solid white;*/
-    margin: 0.1rem; /* I cannot find right value to put it on right place*/
+    margin: 0.1rem;
+    /* I cannot find right value to put it on right place*/
     width: 500px;
     height: 200px;
     display: flex;
@@ -333,22 +335,26 @@ footer label{
     justify-content: left;
     font-size: smaller;
 }
+
 footer .author {
     display: flex;
     flex-direction: row;
-    
+
 }
 
 
 footer ul {
-color: rgb(243, 241, 241); /* add a contrasting color to make the links visible */
-  text-decoration: none; /* remove underlines */
-  padding: 0.5em; /* add padding to create space around the links */
-  font-size: smaller;
+    color: rgb(243, 241, 241);
+    /* add a contrasting color to make the links visible */
+    text-decoration: none;
+    /* remove underlines */
+    padding: 0.5em;
+    /* add padding to create space around the links */
+    font-size: smaller;
 }
 
 footer li {
-    margin: 1rem 2rem 1rem 2rem; 
+    margin: 1rem 2rem 1rem 2rem;
     display: flex;
     justify-content: left;
     align-content: left;
@@ -358,10 +364,10 @@ footer li {
 }
 
 footer a {
-   color: white;
-   flex-direction: column;
-   text-decoration: none;
-   padding: o.5em;
+    color: white;
+    flex-direction: column;
+    text-decoration: none;
+    padding: o.5em;
 }
 
 footer .DownLine {
@@ -369,7 +375,7 @@ footer .DownLine {
     flex-wrap: nowrap, wrap, wrap-reverse;
 }
 
-footer .footer-container-end hr{
+footer .footer-container-end hr {
     width: 80%;
     margin: 0 auto;
     height: 1px;
