@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
@@ -12,8 +12,7 @@
 h1 {
     font-size: 2rem;
     font-family: "Abril Fatface", serif;
-    font-weight: 400;
-    font-style: normal;
+    letter-spacing: .1rem;
 }
 
 h2 {
@@ -24,6 +23,11 @@ h2 {
     text-transform: uppercase;
 }
 
+header {
+    background-image:url("assets/photoshop/photoshop/design-assets/bgk-header.png");
+    background-size: cover;
+}
+
 h3 {
     font-size: 1rem;
     font-family: "Roboto", sans-serif;
@@ -31,12 +35,6 @@ h3 {
     font-style: normal;
     text-transform: uppercase;
 }
-
-#nav-wrap {}
-
-#our-nav {}
-
-#hero {}
 
 #story {
     width: 100%;
@@ -223,10 +221,6 @@ h3 {
     text-align: center;
 }
 
-#team {}
-
-#contact-client {}
-
 #our-footer {
     background-image: url("./assets/photoshop/photoshop/design-assets/bgk-footer.png");
     /*border: 2px solid rgb(35, 6, 81);*/
@@ -360,8 +354,113 @@ footer li {
     align-content: left;
     align-items: left;
     padding: 0.2rem;
-
 }
+
+
+    .our-nav{width: 100%;
+             height:80px;
+             display: flex;
+            justify-content: space-between;
+        }
+    
+    .logopic{width:fit-content;
+              height: 100%;
+             
+              }
+             
+    
+    .logopic img{ 
+              align-self: center;
+              margin-left: 150px;
+              margin-top: 1.5rem;}
+
+    
+    .logotext{width:fit-content;
+              height: 100%;
+              ;
+              margin-left: 20px;
+              line-height: 80px;
+              color: rgb(114, 191, 190);
+            }
+
+    .header-main-logo{display: flex;}        
+   
+    .navfirst{width:fit-content;
+              height: 100%;
+              }
+
+    .navfirst ul{
+              list-style: none;
+              margin-right: 220px;
+              }
+    .navfirst ul li{
+              display: inline;
+              float: left;
+             }
+    .navfirst ul li a {
+              padding: 0 10px;
+              font-family: Arial, Helvetica, sans-serif;
+              line-height: 80px;
+              text-decoration: none;
+              display: block;
+              height: 100%;
+              color:white;
+              }
+            
+    .navfirst ul li.special a {
+              display:block;
+              color:  rgb(114, 191, 190);}
+    
+        
+        
+
+ 
+ 
+    .hero{
+       height: 40rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    
+  
+
+    h3{color:rgb(114, 191, 190); overflow:hidden}
+    h3 h4 {text-align: center;}
+    UL{display: inline;}
+
+    .text{
+        text-align: center;
+        /* position:absolute;
+        top: 30vh;
+        left: 17vw; */
+        /* transform: translate(-50%,-50%); */
+          
+    }
+          
+    
+         .textwhite{color:white;display: flex;flex-direction: column;justify-content: space-around;align-items: center;}       
+
+         .textblue {
+          color:rgb(114, 191, 190);
+          top: 0;
+          /* padding-top:1px;
+          padding-left:1px;
+           padding-right: 1px;
+           padding-bottom: 1px; */
+           width: fit-content;
+           margin: 1em auto;
+           padding: 1em;
+           border: 1px solid rgb(114, 191, 190);
+           border-width:1px;
+           text-transform: uppercase;
+            }
+
+.textblue:hover {
+    cursor: pointer;
+}
+
+hr{width: 90px;border-color:rgb(114, 191, 190);border-style: solid;margin-bottom: 2rem;margin-top: 2rem;}
 
 footer a {
     color: white;
